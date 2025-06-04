@@ -1,0 +1,75 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Latar belakang utama */
+body {
+  background-color: #f2f5f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Judul halaman */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Container jadwal */
+.schedule-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Kartu kegiatan */
+.schedule-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-card h2 {
+  font-size: 1.2rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.schedule-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Tabel opsional (jika pakai tabel) */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
